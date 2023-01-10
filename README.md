@@ -1,4 +1,4 @@
-# JsToyProject
+# 객관식 문제 시험지 만들기
 HTML, CSS, JS를 이용한 시험지 만들기
 
 - HTML, CSS, JS를 이용한 시험지 만들기 토이프로젝트 입니다.
