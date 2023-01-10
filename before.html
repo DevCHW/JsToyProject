@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>시험 시 유의사항</title>
+  <style type="text/css">
+    body{
+      margin:0;
+      padding:0;
+    }
+    body > div.container{
+      margin:auto;
+      width: 70%;
+      height:1000px;
+    }
+
+
+    /* header */
+    header{
+      display:flex;
+      flex-direction: column;
+      border-bottom: solid 10px black;
+      padding-bottom: 3%;
+    }
+    header > div.subject{
+      display:flex;
+      flex-direction:column;
+      text-align: center;
+    }
+    header > div.subject> p{
+      font-size:2rem;
+      position:relative;
+      margin-bottom:1px;
+    }
+    header > div.subject> h1{
+      margin-top:10px;
+      font-size: 3rem;
+    }
+    header > div.header_footer{
+      width:100%;
+      margin:auto;
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header > div.header_footer > table#pg_time{
+      border-collapse: collapse;
+      width:30%;
+      height:60px;
+    }
+    header > div.header_footer > table#pg_time > tbody > tr > td{
+      border: solid 1px black;
+      text-align: center;
+    }
+    header > div.header_footer > table#student_info > tbody > tr > td > input{
+      height:20px;
+    }
+    header > div.header_footer > table#student_info > tbody > tr > td > label{
+      font-weight: bold;
+    }
+
+
+
+
+
+    /* Main */
+    div.Main{
+      margin-top:5%;
+      border:solid 1px black;
+      height: 70%;
+    }
+    div.Main > h1{
+      position:relative;
+      top:2%;
+      text-align: center;
+      padding-bottom: 0;
+    }
+    div.Main > ul {
+      width:80%;
+      margin:auto;
+      list-style:circle;
+      font-size: 20pt;
+    }
+    div.Main > ul > li{
+      margin-bottom: 5%;
+    }
+
+
+
+    
+    /* footer */
+    footer{
+      display:flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    footer > div{
+      width:150px;
+    }
+    footer > div#start_test{
+      height:100%;
+    }
+    footer > div#start_test > a {
+      width: 150px;
+    }
+    footer > div#start_test > a > button{
+      width: 150px;
+      height:60px;
+      font-size:16pt;
+    }
+    footer > div#start_test > a > button:hover{
+      background-color: black;
+      color:white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- header -->
+    <header>
+      <div class="subject">
+        <p>국 가 기 술 자 격 검 정</p>
+        <h1>2022년 1회 쌍용교육센터 학생자격 필기 시험</h1>
+      </div>
+      <div class="header_footer">
+        <table id="pg_time">
+          <tr>
+            <td>프로그램명</td>
+            <td>제한시간</td>
+          </tr>
+          <tr>
+            <td>HTML,CSS,Javascript</td>
+            <td>10분</td>
+          </tr>
+        </table>
+        <table id="student_info">
+          <tr id="student_name">
+            <td>
+              <label name="student_name">성명</label>
+            </td>
+            <td>
+              <input type="text" name="student_name"/>
+            </td>
+          </tr>
+          <tr id="student_no">
+            <td>
+              <label name="student_no">수험번호</label>
+            </td>
+            <td>
+              <input type="text" name="student_no"/>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </header>
+    <!-- Main -->
+    <div class="Main">
+      <h1><수험생 유의사항></h1>
+      <ul>
+        <br>
+        <li>문제지는 출제자의 공부목적으로 작성되었으므로, 오류가 발견되어도 양해 부탁드립니다.</li>
+        <li>시험 전 감독관의 안내사항을 끝까지 듣고, 하단의 시작버튼을 눌러 시험을 시작하시면 됩니다.</li>
+        <li>합격점수는 60점 이상이며, 문제당 5점입니다.</li>
+        <li>제한시간 10분내에 꼭 제출하기 버튼을 눌러서 시험지를 제출하셔야 합니다.</li>
+        <li>응시 중 웃음 2회이상 적발시 퇴실조치입니다.</li>
+        <li>본 시험에 합격하지 못한 수험생들은 꼭 합격할수있도록 충분히 공부한 후에 재응시 해주시길 바랍니다.</li>
+      </ul>
+    </div>
+    <!-- footer -->
+    <footer>
+      <div>
+
+      </div>
+      <h1>쌍 용 강 북 교 육 센 터</h1>
+      <div id="start_test">
+        <a href="test.html"><button type="button">응시시작</button></a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

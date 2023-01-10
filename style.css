@@ -1,0 +1,319 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 700px;
+  margin: auto;
+  margin-bottom: 0;
+}
+
+
+
+/* header */
+header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 20%;
+
+}
+
+header>h1#subject {
+  margin-left: 1%;
+}
+
+header>h1#subject>img {
+  position: relative;
+  top: 10px;
+
+}
+
+header>div#timer {
+  position: relative;
+  bottom: 10%;
+  font-weight: bold;
+  margin-right: 1%;
+}
+
+
+
+
+/* Main */
+div#Main {
+  display: flex;
+  justify-content: space-between;
+  height: 70%;
+  border-top: solid 1px gray;
+  border-bottom: solid 1px gray;
+}
+
+div#Main>div#section {
+  border: solid 1px gray;
+  width: 80%;
+  max-height: 100%;
+  overflow-y: scroll;
+  display: flex;
+  justify-content: space-between;
+}
+
+div#Main>div#section>div#article1 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+div#Main>div#section>div#article2 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+#quiz_img>img {
+  width: 150px;
+  height: 20vh;
+}
+
+div#Main>div#section>div#article1>div#problem {
+  border-right: solid 1px gray;
+}
+
+div#Main>div#section>div#article1>div#problem,
+div#Main>div#section>div#article2>div#problem {
+  padding-top: 4%;
+  padding-bottom: 4%;
+  padding-right: 2%;
+  padding-left: 2%;
+  width: 93%;
+}
+
+div#Main>div#section>div#article1>div#problem>p,
+div#Main>div#section>div#article2>div#problem>p {
+  font-weight: bold;
+}
+
+div#Main>div#section>div#article1>div#problem>table#answers,
+div#Main>div#section>div#article2>div#problem>table#answers {
+  width: 100%;
+  height: 10vh;
+  margin: auto;
+  /* border:solid 1px red; */
+}
+
+div#Main>aside {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+div#Main>aside>div#answer_bar {
+  max-height: 100%;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: solid 1px black;
+  height: 98%;
+}
+
+div#Main>aside>div#answer_bar>h1 {
+  font-weight: bold;
+  text-align: center;
+  border: #909090;
+  background-color: blue;
+  color: white;
+}
+
+div#Main>aside>div#answer_bar>div#answer_view {
+  height: auto;
+}
+
+div#Main>aside>div#answer_bar>div#answer_view>div#answer_block {
+  display: flex;
+  flex-direction: column;
+}
+
+div#Main>aside>div#answer_bar>div#answer_view>div#quiz_num {
+  background-color: #e6ffff;
+  text-align: center;
+  font-weight: bold;
+}
+
+div#Main>aside>div#answer_bar>div#answer_view>div#five_border {
+  border: solid 1px #e0e0e0;
+}
+
+div#Main>aside>div#answer_bar>div#answer_view>div#answer_block>div#answer_num {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+div#Main>aside>div#answer_bar>div#answer_view>div#answer_block>div.quiz_radio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+}
+
+
+
+/* footer */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 10%;
+}
+
+footer>#Answer {
+  width: 18%;
+  display: flex;
+  justify-content: center;
+}
+
+footer>div#cnt_problem {
+  width: auto;
+  display: flex;
+  justify-content: flex-end;
+  font-weight: bold;
+  color: blue;
+  padding-right: 3%;
+}
+
+footer>div#Answer>button {
+  width: 120px;
+  height: 40px;
+  font-size: 16pt;
+}
+
+footer>div#Answer>button:hover {
+  background-color: black;
+  color: white;
+}
+
+
+
+/* gradecard */
+div#gradecard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 60px;
+  width: 80%;
+  margin: auto;
+}
+
+#tbl_gradecard>tbody>tr:nth-child(1)>th {
+  height: 30px;
+  font-weight: bold;
+  background-color: #acf;
+  border-bottom: 1px solid #cef;
+  color: white;
+  font-size: 20pt;
+}
+
+table#tbl_gradecard {
+  text-align: center;
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #cef;
+}
+
+#tbl_gradecard tr:nth-child(even) {
+  background-color: #e6ffff;
+}
+
+#tbl_gradecard tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+table#tbl_gradecard>tbody>tr>td {
+  border: 1px solid #cef;
+}
+
+table#tbl_gradecard>tbody>tr#quiz_num>td:first-child,
+table#tbl_gradecard>tbody>tr#answers>td:first-child,
+table#tbl_gradecard>tbody>tr#choice_answer>td:first-child,
+table#tbl_gradecard>tbody>tr#ox>td:first-child {
+  background-color: aqua;
+  font-weight: bold;
+}
+
+div#gradecard>div#score {
+  font-weight: bold;
+  text-align: end;
+}
+
+div#gradecard>div#result {
+  text-align: center;
+  font-size: 16pt;
+}
+
+
+@media screen and (max-width: 768px) {
+  div#Main {
+    display: block;
+    height: 70%;
+    border-top: solid 1px gray;
+    border-bottom: solid 1px gray;
+  }
+
+  div#Main>aside {
+    display: none;
+  }
+
+  div#Main>div#section {
+    border: solid 1px gray;
+    width: 100%;
+    max-height: 100%;
+    overflow-y: scroll;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #quiz_img>img {
+    width: 120px;
+    height: 10vh;
+  }
+}
+
+@media screen and (max-width: 1013px) {
+  #quiz_img>img {
+    width: 120px;
+    height: 15vh;
+  }
+}
+
+@media screen and (max-width: 821px) {
+  #quiz_img>img {
+    width: 100px;
+    height: 10vh;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #quiz_img>img {
+    width: 70px;
+    height: 8vh;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #quiz_img>img {
+    width: 30px;
+    height: 5vh;
+  }
+}
